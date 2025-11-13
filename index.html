@@ -41,16 +41,17 @@
 
     h2 {
         font-size: 20px;
-        color: #4a148c;
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 10px;
-        padding-bottom: 3px;
+        color: #6366f1;
+        border-bottom: 2px solid #6366f1;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
     }
 
     h3 {
-        color: #4a148c;
+        color: #6366f1;
         font-size: 16px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
+        font-weight: 600;
     }
 
     p {
@@ -82,17 +83,16 @@
     }
 
     .grille-competences {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
     }
 
     .carte-competence {
         background: linear-gradient(135deg, #d1c4e9 0%, #b794f6 100%);
         color: #333;
-        padding: 12px;
+        padding: 15px;
         border-radius: 8px;
-        flex: 1 1 150px;
         text-align: center;
         font-size: 14px;
         font-weight: 600;
@@ -106,26 +106,29 @@
     }
 
     .liste-loisirs {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
     }
 
     .loisir {
-        background: #e1bee7;
+        background: linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%);
         color: #4a148c;
-        padding: 8px 12px;
-        border-radius: 5px;
-        font-size: 13px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .projet-item {
-        background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
-        padding: 12px;
-        margin-bottom: 10px;
-        border-left: 4px solid #ec4899;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        padding: 15px;
+        margin-bottom: 12px;
+        border-left: 4px solid #a855f7;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     }
 
     .projet-item h3 {
@@ -136,21 +139,21 @@
     }
 
     .veille-definition {
-        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-        padding: 12px;
-        margin-bottom: 10px;
+        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        padding: 15px;
+        margin-bottom: 12px;
         border-left: 4px solid #3b82f6;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     }
 
     .veille-exemple {
-        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-        padding: 12px;
-        margin-bottom: 10px;
+        background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+        padding: 15px;
+        margin-bottom: 12px;
         border-left: 4px solid #f59e0b;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     }
 
     .veille-exemple h3, .veille-definition h3 {
@@ -185,7 +188,10 @@
         <div class="a-propos">
             <h2>À propos de moi</h2>
             <p>
-              Je m'appelle Yassine.Je suis née en France et j'ai 18ans.Je suis actuellement étudiant en BTS Services Informatiques aux Organisations (SIO), passionné par les nouvelles technologies et le développement de solutions informatiques. Curieux et motivé, je souhaite me spécialiser dans la filière SISR (Solutions d’Infrastructure, Systèmes et Réseaux) afin de renforcer mes compétences en administration réseau, cybersécurité et gestion des systèmes. J’aime apprendre de nouvelles choses, relever des défis techniques et trouver des solutions efficaces aux problèmes informatiques. En dehors de mes études, je suis également passionné de sport, ce qui m’aide à développer l’esprit d’équipe, la rigueur et la persévérance — des qualités que j’applique aussi dans mon parcours professionnel.
+                Passionné par l'informatique et les nouvelles technologies, je poursuis actuellement un BTS SIO (Services Informatiques aux Organisations).
+                J'aime comprendre comment les systèmes et les applications fonctionnent, et je prends plaisir à résoudre des problèmes techniques.
+                Mon objectif est de développer mes compétences en programmation et en réseaux afin de travailler plus tard dans le développement web ou la cybersécurité.
+                Curieux, motivé et organisé, je cherche toujours à apprendre de nouvelles choses pour progresser dans le domaine de l'informatique.Je souhaite chpisir la spécialité SISR
             </p>
         </div>
     </div>
@@ -231,34 +237,42 @@
     <div class="section">
         <h2>📋 Épreuve E5 - BTS SIO</h2>
         <div class="projet-item">
-            <h3><span class="icone">📊</span> Portfolio de Compétences</h3>
-            <p>L'épreuve E5 du BTS SIO consiste à présenter un portfolio professionnel devant un jury. Ce portfolio regroupe l'ensemble de mes réalisations et compétences acquises durant ma formation. Il documente mes projets académiques, mes expériences en entreprise, ainsi que mes compétences techniques en développement, réseaux et administration système. Le portfolio démontre ma capacité à analyser, concevoir et mettre en œuvre des solutions informatiques adaptées aux besoins des organisations.</p>
+            <h3><span class="icone">📚</span> Qu'est-ce que l'Épreuve E5 ?</h3>
+            <p>L'épreuve E5 du BTS SIO, appelée <strong>"Évaluation des compétences informatiques"</strong>, permet d'évaluer les compétences acquises lors des expériences professionnelles (stages, emplois, projets). Cette épreuve orale valide ma capacité à mobiliser mes compétences techniques et méthodologiques dans des situations concrètes.</p>
         </div>
         <div class="projet-item">
-            <h3><span class="icone">🎯</span> Situations Professionnelles</h3>
-            <p>Pour l'épreuve E5, je prépare deux situations professionnelles approfondies qui illustrent mon parcours et mes compétences. Ces situations sont issues de mes expériences en stage ou en projet et présentent le contexte de l'organisation, la problématique rencontrée, les solutions techniques mises en place, ainsi que les résultats obtenus. Chaque situation professionnelle est analysée selon les compétences du référentiel BTS SIO et permet au jury d'évaluer mes capacités d'analyse, de résolution de problèmes et de communication technique.</p>
+            <h3><span class="icone">🎯</span> Déroulement de l'épreuve</h3>
+            <p><strong>Préparation :</strong> Environ 1h30 avant l'épreuve pour préparer ma présentation.</p>
+            <p><strong>Présentation orale :</strong> 10 minutes pour présenter mon parcours et mes compétences techniques.</p>
+            <p><strong>Entretien avec le jury :</strong> 30 minutes de questions sur mes choix techniques, l'organisation et les projets présentés.</p>
         </div>
         <div class="projet-item">
             <h3><span class="icone">💼</span> Compétences Évaluées</h3>
-            <p><strong>Compétences techniques :</strong> Développement d'applications, administration des systèmes et réseaux, gestion de bases de données, sécurité informatique.</p>
-            <p><strong>Compétences organisationnelles :</strong> Gestion de projet, documentation technique, analyse des besoins, résolution de problèmes.</p>
-            <p><strong>Compétences relationnelles :</strong> Communication professionnelle, travail en équipe, présentation orale, argumentation technique.</p>
+            <p>Le jury évalue mes compétences dans deux domaines principaux :</p>
+            <p><strong>• SLAM :</strong> Conception et développement d'applications</p>
+            <p><strong>• SISR :</strong> Administration des systèmes et des réseaux</p>
         </div>
     </div>
 
     <div class="section">
         <h2>🔍 Veille Technologique</h2>
         <div class="veille-definition">
-            <h3><span class="icone">📖</span> Qu'est-ce qu'une veille technologique ?</h3>
-            <p>La veille technologique est un processus continu de surveillance et d'analyse de l'évolution des technologies dans un domaine spécifique. Elle consiste à collecter, traiter et analyser des informations sur les nouvelles technologies, les innovations, les tendances du marché et les pratiques émergentes. Cette démarche permet de rester informé des dernières avancées et de maintenir ses compétences à jour dans un secteur en constante évolution comme l'informatique.</p>
+            <h3><span class="icone">🔎</span> C'est quoi une veille technologique ?</h3>
+            <p>Dans le domaine informatique, la veille technologique est particulièrement importante car l'innovation et l'évolution des technologies sont très rapides. Elle consiste à surveiller et analyser les informations permettant de rester à jour sur les avancées dans les domaines de l'informatique tels que les logiciels, les applications, les réseaux, la cybersécurité, l'intelligence artificielle, le cloud computing, etc.</p>
+            <p>Les professionnels de l'informatique utilisent différentes méthodes pour effectuer leur veille : ils suivent des blogs spécialisés, des sites web de référence, des revues spécialisées, des forums de discussion, des conférences, des événements et des salons professionnels. Les outils de veille technologique tels que les flux RSS, les alertes Google, les agrégateurs de contenu et les bases de données en ligne sont également utiles pour surveiller les tendances émergentes.</p>
         </div>
         <div class="veille-definition">
-            <h3><span class="icone">⚡</span> Pourquoi est-elle importante ?</h3>
-            <p>Dans le domaine de l'informatique, la veille technologique est essentielle car les technologies évoluent très rapidement. Elle permet d'anticiper les changements, d'identifier de nouvelles opportunités professionnelles, d'améliorer ses compétences techniques et de rester compétitif sur le marché du travail. Pour un professionnel de l'informatique, effectuer une veille régulière est indispensable pour proposer des solutions innovantes, éviter l'obsolescence de ses connaissances et comprendre les enjeux futurs du secteur.</p>
+            <h3><span class="icone">💡</span> Pourquoi c'est important ?</h3>
+            <p>Effectuer une veille technologique régulière présente de nombreux avantages :</p>
+            <p><strong>•</strong> Rester compétitif et à jour sur les nouvelles technologies</p>
+            <p><strong>•</strong> Anticiper les évolutions du métier et les besoins du marché</p>
+            <p><strong>•</strong> Découvrir de nouvelles solutions et méthodes de travail</p>
+            <p><strong>•</strong> Améliorer ses compétences et son expertise technique</p>
         </div>
         <div class="veille-exemple">
-            <h3><span class="icone">🛡️</span> Ma Veille : Cybersécurité et IA</h3>
-            <p>Je réalise actuellement une veille technologique sur l'intersection entre la cybersécurité et l'intelligence artificielle. Ce sujet explore comment l'IA révolutionne la détection des menaces, l'analyse comportementale et la réponse aux incidents de sécurité. J'étudie les nouveaux outils d'IA pour la cybersécurité (détection d'anomalies, analyse prédictive), mais aussi les risques que l'IA peut représenter (deepfakes, attaques automatisées). Je suis des sources spécialisées comme les blogs de sécurité (ANSSI, CERT-FR), les conférences du secteur et les publications techniques pour rester informé des dernières évolutions et comprendre comment ces technologies transforment les métiers de la sécurité informatique.</p>
+            <h3><span class="icone">🤖</span> Mon sujet de veille : IA générative dans le développement logiciel</h3>
+            <p>L'intelligence artificielle (IA) connaît depuis quelques années un essor considérable, notamment grâce à l'apparition de modèles dits génératifs. Ces technologies, capables de produire du contenu original (texte, image, son, ou code), transforment progressivement le monde du développement logiciel. Des outils comme GitHub Copilot, ChatGPT ou Codium sont aujourd'hui capables d'assister les développeurs dans l'écriture, la correction et l'optimisation de leur code.</p>
+            <p>Ces outils permettent de générer automatiquement du code, de proposer des corrections, d'expliquer des fonctions ou de créer de la documentation. Ils peuvent aussi servir de support pédagogique pour les débutants, en proposant des exemples et des solutions détaillées. L'IA générative modifie la manière dont les développeurs travaillent au quotidien, en automatisant certaines tâches répétitives et en accélérant la production de logiciels.</p>
         </div>
     </div>
 
@@ -288,5 +302,3 @@
 
 </body>
 </html>
-
-

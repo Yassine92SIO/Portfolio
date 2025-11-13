@@ -43,8 +43,8 @@
         font-size: 20px;
         color: #6366f1;
         border-bottom: 2px solid #6366f1;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
     }
 
     h3 {
@@ -56,30 +56,58 @@
 
     p {
         font-size: 14px;
-        margin: 4px 0;
+        margin: 8px 0;
+        line-height: 1.6;
     }
 
     .section {
         background: #fff;
-        padding: 15px 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
+        padding: 20px 25px;
+        margin-bottom: 25px;
+        border-radius: 12px;
         border: 1px solid #ddd;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .a-propos {
         background: linear-gradient(135deg, #f8f6fc 0%, #e9d5ff 100%);
-        padding: 15px;
-        border-radius: 8px;
+        padding: 18px;
+        border-radius: 10px;
         border-left: 4px solid #9333ea;
+        line-height: 1.8;
     }
 
     .bloc-formation, .info-contact {
         background: #f9f9f9;
-        padding: 8px;
-        margin-bottom: 8px;
+        padding: 12px 15px;
+        margin-bottom: 12px;
         border-left: 3px solid #a77fd1;
+        border-radius: 6px;
+    }
+
+    .experience-pro {
+        background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        padding: 15px;
+        margin-bottom: 15px;
+        border-left: 4px solid #22c55e;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .experience-pro h3 {
+        color: #16a34a;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .experience-pro ul {
+        margin: 8px 0;
+        padding-left: 20px;
+    }
+
+    .experience-pro li {
+        margin: 5px 0;
+        line-height: 1.6;
     }
 
     .grille-competences {
@@ -124,8 +152,8 @@
 
     .projet-item {
         background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
-        padding: 15px;
-        margin-bottom: 12px;
+        padding: 18px;
+        margin-bottom: 15px;
         border-left: 4px solid #a855f7;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.08);
@@ -133,15 +161,20 @@
 
     .projet-item h3 {
         margin-top: 0;
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         gap: 8px;
     }
 
+    .projet-item p {
+        margin: 8px 0;
+    }
+
     .veille-definition {
         background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-        padding: 15px;
-        margin-bottom: 12px;
+        padding: 18px;
+        margin-bottom: 15px;
         border-left: 4px solid #3b82f6;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.08);
@@ -149,8 +182,8 @@
 
     .veille-exemple {
         background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
-        padding: 15px;
-        margin-bottom: 12px;
+        padding: 18px;
+        margin-bottom: 15px;
         border-left: 4px solid #f59e0b;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.08);
@@ -158,9 +191,14 @@
 
     .veille-exemple h3, .veille-definition h3 {
         margin-top: 0;
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+
+    .veille-definition p, .veille-exemple p {
+        margin: 10px 0;
     }
 
     .icone {
@@ -205,6 +243,31 @@
         <div class="bloc-formation">
             <h3>Bac STI2D – Mention Assez Bien</h3>
             <p>Lycée Galilée (Gennevilliers)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>💼 Parcours Professionnel</h2>
+        <div class="experience-pro">
+            <h3>🥊 Coach de Boxe Anglaise - 1 mois</h3>
+            <p><strong>Encadrement des jeunes (11 ans)</strong></p>
+            <ul>
+                <li>Animation des séances d'échauffement et préparation physique</li>
+                <li>Enseignement des mouvements techniques de boxe anglaise</li>
+                <li>Encadrement des combats pratiques et mise en situation</li>
+                <li>Développement de l'esprit sportif et des valeurs de discipline</li>
+            </ul>
+        </div>
+        <div class="experience-pro">
+            <h3>🔧 Mécanicien Automobile - 3 mois</h3>
+            <p><strong>Garage automobile</strong></p>
+            <ul>
+                <li>Réalisation de vidanges et entretien courant des véhicules</li>
+                <li>Changement et équilibrage de pneus</li>
+                <li>Remplacement de plaquettes de frein</li>
+                <li>Diagnostic et contrôle technique des véhicules</li>
+                <li>Accueil et conseil client sur les interventions nécessaires</li>
+            </ul>
         </div>
     </div>
     
@@ -297,8 +360,9 @@
 </div>
 
 <footer>
-    Portfolio 2025 - Y
+    Portfolio 2025 - Yassine Z
 </footer>
 
 </body>
 </html>
+

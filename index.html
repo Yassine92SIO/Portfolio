@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Yassine</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    header {
+        background: linear-gradient(135deg, #6b46c1 0%, #9333ea 100%);
+        padding: 15px 20px;
+        border-bottom: 3px solid #5b21b6;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .container {
+        margin: 15px auto;
+        max-width: 750px;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: #4a148c;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #4a148c;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+    }
+
+    h3 {
+        color: #4a148c;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    .section {
+        background: #fff;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .a-propos {
+        background: linear-gradient(135deg, #f8f6fc 0%, #e9d5ff 100%);
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #9333ea;
+    }
+
+    .bloc-formation, .info-contact {
+        background: #f9f9f9;
+        padding: 8px;
+        margin-bottom: 8px;
+        border-left: 3px solid #a77fd1;
+    }
+
+    .grille-competences {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .carte-competence {
+        background: linear-gradient(135deg, #d1c4e9 0%, #b794f6 100%);
+        color: #333;
+        padding: 12px;
+        border-radius: 8px;
+        flex: 1 1 150px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .carte-competence:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .liste-loisirs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .loisir {
+        background: #e1bee7;
+        color: #4a148c;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .projet-item {
+        background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+        padding: 12px;
+        margin-bottom: 10px;
+        border-left: 4px solid #ec4899;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .projet-item h3 {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .veille-definition {
+        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        padding: 12px;
+        margin-bottom: 10px;
+        border-left: 4px solid #3b82f6;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .veille-exemple {
+        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        padding: 12px;
+        margin-bottom: 10px;
+        border-left: 4px solid #f59e0b;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .veille-exemple h3, .veille-definition h3 {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .icone {
+        font-size: 18px;
+    }
+
+    footer {
+        text-align: left;
+        padding: 10px 15px;
+        font-size: 13px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Yassine - Portfolio</div>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h1>Yassine</h1>
+        <p>Étudiant en BTS SIO - 18 ans</p>
+        <div class="a-propos">
+            <h2>À propos de moi</h2>
+            <p>
+                Passionné par l'informatique et les nouvelles technologies, je poursuis actuellement un BTS SIO (Services Informatiques aux Organisations).
+                J'aime comprendre comment les systèmes et les applications fonctionnent, et je prends plaisir à résoudre des problèmes techniques.
+                Mon objectif est de développer mes compétences en programmation et en réseaux afin de travailler plus tard dans le développement web ou la cybersécurité.
+                Curieux, motivé et organisé, je cherche toujours à apprendre de nouvelles choses pour progresser dans le domaine de l'informatique.Je souhaite chpisir la spécialité SISR
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Parcours scolaire</h2>
+        <div class="bloc-formation">
+            <h3>BTS SIO</h3>
+            <p>Lycée Charles de Foucauld (Paris 18eme)</p>
+        </div>
+        <div class="bloc-formation">
+            <h3>Bac STI2D – Mention Assez Bien</h3>
+            <p>Lycée Galilée (Gennevilliers)</p>
+        </div>
+    </div>
+    
+
+    <div class="section">
+        <h2>Compétences</h2>
+        <div class="grille-competences">
+            <div class="carte-competence">HTML</div>
+            <div class="carte-competence">SQL</div>
+            <div class="carte-competence">Python</div>
+            <div class="carte-competence">Excel</div>
+            <div class="carte-competence">Réseaux (IP)</div>
+            <div class="carte-competence">Bases de données</div>
+	    <div class="carte-competence">CSS</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📁 Mes Projets</h2>
+        <div class="projet-item">
+            <h3><span class="icone">💼</span> Portfolio Personnel</h3>
+            <p>Création d'un portfolio web complet présentant mon parcours, mes compétences et mes réalisations. Développé en HTML et CSS, ce site me permet de valoriser mon profil professionnel et de partager mes expériences en BTS SIO. Il inclut des sections dédiées à mes projets, ma veille technologique et mes compétences techniques.</p>
+        </div>
+        <div class="projet-item">
+            <h3><span class="icone">🌐</span> Site de Présentation HTML</h3>
+            <p>Développement d'un site de présentation entièrement en HTML avec intégration de CSS pour le design. Ce projet m'a permis de maîtriser les bases du développement web, la structuration de contenu, la mise en page responsive et l'organisation du code. J'ai appliqué les bonnes pratiques de développement et d'accessibilité web.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📋 Épreuve E5 - BTS SIO</h2>
+        <div class="projet-item">
+            <h3><span class="icone">📊</span> Portfolio de Compétences</h3>
+            <p>L'épreuve E5 du BTS SIO consiste à présenter un portfolio professionnel devant un jury. Ce portfolio regroupe l'ensemble de mes réalisations et compétences acquises durant ma formation. Il documente mes projets académiques, mes expériences en entreprise, ainsi que mes compétences techniques en développement, réseaux et administration système. Le portfolio démontre ma capacité à analyser, concevoir et mettre en œuvre des solutions informatiques adaptées aux besoins des organisations.</p>
+        </div>
+        <div class="projet-item">
+            <h3><span class="icone">🎯</span> Situations Professionnelles</h3>
+            <p>Pour l'épreuve E5, je prépare deux situations professionnelles approfondies qui illustrent mon parcours et mes compétences. Ces situations sont issues de mes expériences en stage ou en projet et présentent le contexte de l'organisation, la problématique rencontrée, les solutions techniques mises en place, ainsi que les résultats obtenus. Chaque situation professionnelle est analysée selon les compétences du référentiel BTS SIO et permet au jury d'évaluer mes capacités d'analyse, de résolution de problèmes et de communication technique.</p>
+        </div>
+        <div class="projet-item">
+            <h3><span class="icone">💼</span> Compétences Évaluées</h3>
+            <p><strong>Compétences techniques :</strong> Développement d'applications, administration des systèmes et réseaux, gestion de bases de données, sécurité informatique.</p>
+            <p><strong>Compétences organisationnelles :</strong> Gestion de projet, documentation technique, analyse des besoins, résolution de problèmes.</p>
+            <p><strong>Compétences relationnelles :</strong> Communication professionnelle, travail en équipe, présentation orale, argumentation technique.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔍 Veille Technologique</h2>
+        <div class="veille-definition">
+            <h3><span class="icone">📖</span> Qu'est-ce qu'une veille technologique ?</h3>
+            <p>La veille technologique est un processus continu de surveillance et d'analyse de l'évolution des technologies dans un domaine spécifique. Elle consiste à collecter, traiter et analyser des informations sur les nouvelles technologies, les innovations, les tendances du marché et les pratiques émergentes. Cette démarche permet de rester informé des dernières avancées et de maintenir ses compétences à jour dans un secteur en constante évolution comme l'informatique.</p>
+        </div>
+        <div class="veille-definition">
+            <h3><span class="icone">⚡</span> Pourquoi est-elle importante ?</h3>
+            <p>Dans le domaine de l'informatique, la veille technologique est essentielle car les technologies évoluent très rapidement. Elle permet d'anticiper les changements, d'identifier de nouvelles opportunités professionnelles, d'améliorer ses compétences techniques et de rester compétitif sur le marché du travail. Pour un professionnel de l'informatique, effectuer une veille régulière est indispensable pour proposer des solutions innovantes, éviter l'obsolescence de ses connaissances et comprendre les enjeux futurs du secteur.</p>
+        </div>
+        <div class="veille-exemple">
+            <h3><span class="icone">🛡️</span> Ma Veille : Cybersécurité et IA</h3>
+            <p>Je réalise actuellement une veille technologique sur l'intersection entre la cybersécurité et l'intelligence artificielle. Ce sujet explore comment l'IA révolutionne la détection des menaces, l'analyse comportementale et la réponse aux incidents de sécurité. J'étudie les nouveaux outils d'IA pour la cybersécurité (détection d'anomalies, analyse prédictive), mais aussi les risques que l'IA peut représenter (deepfakes, attaques automatisées). Je suis des sources spécialisées comme les blogs de sécurité (ANSSI, CERT-FR), les conférences du secteur et les publications techniques pour rester informé des dernières évolutions et comprendre comment ces technologies transforment les métiers de la sécurité informatique.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Loisirs</h2>
+        <div class="liste-loisirs">
+            <div class="loisir">Boxe</div>
+            <div class="loisir">Natation</div>
+            <div class="loisir">Films</div>
+            <div class="loisir">Séries</div>
+            <div class="loisir">Mangas</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2> Me Contacter</h2>
+        <div class="info-contact"><strong>Nom :</strong> Yassine</div>
+        <div class="info-contact"><strong>Âge :</strong> 18 ans</div>
+        <div class="info-contact"><strong>Formation :</strong> BTS SIO</div>
+        <div class="info-contact"><strong>Email :</strong> yassine@gmail.com</div>
+    </div>
+</div>
+
+<footer>
+    Portfolio 2025 - Y
+</footer>
+
+</body>
+</html>
+
